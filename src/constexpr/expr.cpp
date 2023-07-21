@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
   size_t number = 5;
   size_t result = 120;
 

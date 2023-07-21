@@ -1,7 +1,7 @@
 CXX=g++
 CXXFLAGS=-O3 -std=c++17
 
-srcfiles=constexpr.cpp noconstexpr.cpp expr.cpp
+srcfiles=constexpr.cpp noconstexpr.cpp expr.cpp tmp.cpp
 binaries=$(patsubst %.cpp, %-exe, $(srcfiles))
 asmfiles=$(patsubst %.cpp, %.s, $(srcfiles))
 
