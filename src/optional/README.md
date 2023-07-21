@@ -1,4 +1,4 @@
-# std::optional
+# std::optional Demo
 Demo of `std::optional` feature, using safer computation of square roots 
 
 # File list:
@@ -8,4 +8,4 @@ Demo of `std::optional` feature, using safer computation of square roots
 - `make exe` builds executable binaries.
 
 # Notes
-This feature is a parallel of the `Optional` type seen in Python.
+- This feature is a parallel of the `Optional` type seen in Python.
