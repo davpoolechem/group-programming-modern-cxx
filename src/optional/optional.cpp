@@ -9,5 +9,6 @@ std::optional<double> mysqrt(double input) {
 int main(int argc, char *argv[]) {
   std::optional<double> result = mysqrt(std::atof(argv[1]));
 
+  std::cout << result.has_value() << std::endl;
   std::cout << result.value() << std::endl;
 }

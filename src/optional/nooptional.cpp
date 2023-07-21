@@ -2,9 +2,7 @@
 #include <iostream>
 #include <optional>
 
-double mysqrt(double input) {
-  return sqrt(input);
-}
+double mysqrt(double input) { return sqrt(input); }
 
 int main(int argc, char *argv[]) {
   double result = mysqrt(std::atof(argv[1]));
