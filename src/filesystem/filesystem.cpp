@@ -45,7 +45,7 @@ int main(int argc, char *argv[]) {
   // '/home/davpoolechem2/Codes/group-programming-modern-cxx/src/filesystem'
   std::cout << "os.getcwd(): " << os.getcwd() << std::endl;
 
-  // -- os.listdir() --//
+  //-- os.listdir() --//
   // python equivalent output: '[\'Makefile', 'bin', 'filesystem.cpp']
   std::cout << "os.listdir(): [";
   for (auto path : os.listdir()) {
@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
   }
   std::cout << "] " << std::endl;
 
-  // -- os.path.isdir() --//
+  //-- os.path.isdir() --//
   // python equivalent output: False; True
   std::cout << "os.path.isdir(\"filesystem.cpp\"): "
             << (os.path.isdir("filesystem.cpp") ? "True" : "False")
