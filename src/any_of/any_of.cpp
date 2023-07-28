@@ -4,6 +4,8 @@
 #include <tuple>
 #include <unordered_map>
 
+//-- check if any member in "members" is of type "member_type" --//
+//-- using both a standard implementation and with std::any_of --//
 std::tuple<bool, bool>
 impls_any_of(const std::unordered_map<std::string, std::string> &members,
              std::string member_type) {
@@ -22,6 +24,7 @@ impls_any_of(const std::unordered_map<std::string, std::string> &members,
   return std::tie(has_member_type_base, has_member_type_std);
 }
 
+//-- check if all members in "members" are of type "member_type" --//
 bool impl_all_of(std::unordered_map<std::string, std::string> &members,
                  std::string member_type) {
   return std::all_of(members.cbegin(), members.cend(), [&](const auto &pair) {
@@ -29,6 +32,7 @@ bool impl_all_of(std::unordered_map<std::string, std::string> &members,
   });
 }
 
+//-- check if no members in "members" are of type "member_type" --//
 bool impl_none_of(std::unordered_map<std::string, std::string> &members,
                   std::string member_type) {
   return std::none_of(members.cbegin(), members.cend(), [&](const auto &pair) {
@@ -44,6 +48,7 @@ int main(int argc, char *argv[]) {
 
   std::string member_type{argv[1]};
 
+  //-- group analysis pre-Andy --//
   const auto &[any_of_base, any_of_std] = impls_any_of(members, member_type);
 
   std::cout << "Any " << member_type << "? " << (any_of_base ? "Yes" : "No")
@@ -56,9 +61,11 @@ int main(int argc, char *argv[]) {
             << (impl_none_of(members, member_type) ? "Yes" : "No") << std::endl
             << std::endl;
 
+  //-- Andy goes to UGA --//
   members.erase("Andy");
   std::cout << "Bye Andy :(" << std::endl;
 
+  //-- group analysis post-Andy --//
   const auto &[any_of_base_b, any_of_std_b] =
       impls_any_of(members, member_type);
 
