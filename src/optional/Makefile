@@ -1,7 +1,7 @@
 CXX=g++
 CXXFLAGS=-O3 -std=c++17
 
-srcfiles=optional.cpp nooptional.cpp
+srcfiles=optional.cpp
 binaries=$(patsubst %.cpp, %-exe, $(srcfiles))
 
 all: exe 
