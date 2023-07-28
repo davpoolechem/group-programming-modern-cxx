@@ -1,8 +1,10 @@
 # group-programming-modern-cxx
-Demo of some modern features of C++, including:
+Demos for some more modern features of C++.
+
+The following topics are discussed:
 
 - `constexpr`
 - `std::optional`
-- `std::any`
-- `std::filesystem`
+- `std::any_of`/`std::all_of`/`std::none_of`
 - Structured binding
+- `std::filesystem`
