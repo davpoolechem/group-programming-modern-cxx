@@ -1,8 +1,8 @@
 # std::any\_of Demo
-Demo of `std::any_of` feature, analyzing the positions of people in the Sherrill group. Also demonstrates the similar features `std::all_of` and `std::none_of`, as well as structured binding. 
+Demo of `std::any_of`, `std::all_of`, and `std::none_of` features, analyzing the positions of people in the Sherrill group. Also demonstrates structured binding. 
 
 # File list:
-- any\_of.cpp: C++ demonstration of `std::any/all/none_of` by analyzing group members.
+- any\_of.cpp: C++ demonstration of `std::any/all/none_of` and structured binding by analyzing group members.
 
 # Makefile
 - `make exe` builds executable binaries.
