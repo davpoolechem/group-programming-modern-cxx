@@ -1,5 +1,5 @@
 # constexpr Demo 
-Demo of `constexpr` feature, using compile-time computation of factorials.
+Demo of `constexpr` feature, using compile-time computation of factorials. `constexpr` marks a variable or function as visible to the compiler at compile-time, which can bring about performance benefits, including more aggressive compiler optimization of code, and micro-optimization via compile-time computations/evaluations. 
 
 # File list:
 - constexpr.cpp: Factorial impl at compile-time using `constexpr`

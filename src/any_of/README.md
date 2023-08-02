@@ -1,5 +1,5 @@
 # std::any\_of Demo
-Demo of `std::any_of`, `std::all_of`, and `std::none_of` features, analyzing the positions of people in the Sherrill group. Also demonstrates structured binding. 
+Demo of `std::any_of`, `std::all_of`, and `std::none_of` features, analyzing the positions of people in the Sherrill group. These functions apply a fed-in predicate function to elements of a container and return `true` if any, all, or none of the selected elements, respectively, evaluate to true for the predicate function. Also demonstrates structured binding, a more Pythonic way to initialize multiple variables. 
 
 # File list:
 - any\_of.cpp: C++ demonstration of `std::any/all/none_of` and structured binding by analyzing group members.

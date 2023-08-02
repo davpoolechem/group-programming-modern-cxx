@@ -1,5 +1,5 @@
 # std::optional Demo
-Demo of `std::optional` feature, using safer computation of square roots 
+Demo of `std::optional` feature, using safer computation of square roots. `std::optional` provides an `optional` class template which can classify a variable as either being defined or not.
 
 # File list:
 - optional.cpp: Safer `sqrt` impl using `std::optional` 
