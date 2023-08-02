@@ -15,3 +15,4 @@ Demo of `constexpr` feature, using compile-time computation of factorials.
 # Notes
 - This feature has no real corollary in Python as far as I am aware, since Python is not a compiled language. :) 
 - Note that the disassembly of constexpr.cpp, expr.cpp, and tmp.cpp are all the same!
+- Psi4 use case: [DLPNO-CCSD code](https://github.com/andyj10224/psi4/blob/dlpno-ccsd_t_new/psi4/src/psi4/dlpno/ccsd.cc) uses `constexpr` to more cleanly differentiate between "crude" and "refined" pair prescreening.
